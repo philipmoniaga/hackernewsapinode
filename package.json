@@ -1,0 +1,31 @@
+{
+  "name": "hackernewsapi",
+  "description": "HackerNews API client for node (REST & Streaming)",
+  "version": "0.0.0",
+  "author": "Philip Moniaga",
+  "keywords": [
+    "hackernews",
+    "api",
+    "rest",
+    "stream",
+    "streaming",
+    "oauth"
+  ],
+  "dependencies": {
+    "request": "2.54.0"
+  },
+  "devDependencies": {
+    "async": "0.2.9",
+    "colors": "0.6.x",
+    "commander": "2.6.0",
+    "memwatch": "0.2.2",
+    "mocha": "2.1.0"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "main": "./lib/hackernews",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha tests/* -t 70000 -R spec --bail"
+  }
+}
